@@ -1,0 +1,17 @@
+### Xcode
+# Ensure no user data persists.
+xcuserdata/
+
+## Discord GameSDK
+# We cannot use C++ or C#.
+GameSDK/cpp
+GameSDK/csharp
+# Examples do not assist us.
+GameSDK/examples
+# Ignore other platform prebuilts
+GameSDK/lib/x86
+GameSDK/lib/x86_64/*.dll
+GameSDK/lib/x86_64/*.lib
+GameSDK/lib/x86_64/*.so
+# We wish to only utilize the dylib.
+GameSDK/lib/x86_64/*.bundle

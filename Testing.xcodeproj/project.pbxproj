@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4276FA1E279DD2AE00875C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA1D279DD2AE00875C33 /* AppDelegate.swift */; };
+		4276FA20279DD2AE00875C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA1F279DD2AE00875C33 /* SceneDelegate.swift */; };
+		4276FA22279DD2AE00875C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA21279DD2AE00875C33 /* ViewController.swift */; };
+		4276FA25279DD2AE00875C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4276FA23279DD2AE00875C33 /* Main.storyboard */; };
+		4276FA27279DD2AF00875C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4276FA26279DD2AF00875C33 /* Assets.xcassets */; };
+		4276FA2A279DD2AF00875C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4276FA28279DD2AF00875C33 /* LaunchScreen.storyboard */; };
+		4276FA57279DD5EF00875C33 /* DiscordXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA56279DD5EF00875C33 /* DiscordXPC.m */; };
+		4276FA59279DD5EF00875C33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA58279DD5EF00875C33 /* main.m */; };
+		4276FA5E279DD71D00875C33 /* DiscordXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 4276FA52279DD5EF00875C33 /* DiscordXPC.xpc */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4276FA72279DDCB200875C33 /* discord_game_sdk.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4276FA71279DDCB200875C33 /* discord_game_sdk.dylib */; };
+		4276FA73279DDCB200875C33 /* discord_game_sdk.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4276FA71279DDCB200875C33 /* discord_game_sdk.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4276FA7B279DF07300875C33 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4276FA7A279DF07300875C33 /* Dynamic */; };
+		4276FA7E279DFD5200875C33 /* NSString+CString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4276FA7D279DFD5200875C33 /* NSString+CString.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4276FA5F279DD71D00875C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4276FA12279DD2AE00875C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4276FA51279DD5EF00875C33;
+			remoteInfo = DiscordXPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4276FA61279DD71D00875C33 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				4276FA5E279DD71D00875C33 /* DiscordXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4276FA74279DDCB200875C33 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4276FA73279DDCB200875C33 /* discord_game_sdk.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4276FA1A279DD2AE00875C33 /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4276FA1D279DD2AE00875C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4276FA1F279DD2AE00875C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4276FA21279DD2AE00875C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4276FA24279DD2AE00875C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4276FA26279DD2AF00875C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4276FA29279DD2AF00875C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4276FA2B279DD2AF00875C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4276FA31279DD2B300875C33 /* Testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Testing.entitlements; sourceTree = "<group>"; };
+		4276FA33279DD2C100875C33 /* discord_game_sdk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = discord_game_sdk.dylib; path = GameSDK/lib/x86_64/discord_game_sdk.dylib; sourceTree = "<group>"; };
+		4276FA52279DD5EF00875C33 /* DiscordXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = DiscordXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		4276FA54279DD5EF00875C33 /* DiscordXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscordXPCProtocol.h; sourceTree = "<group>"; };
+		4276FA55279DD5EF00875C33 /* DiscordXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscordXPC.h; sourceTree = "<group>"; };
+		4276FA56279DD5EF00875C33 /* DiscordXPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscordXPC.m; sourceTree = "<group>"; };
+		4276FA58279DD5EF00875C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4276FA5A279DD5EF00875C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4276FA70279DDCA800875C33 /* GameSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameSDK; sourceTree = "<group>"; };
+		4276FA71279DDCB200875C33 /* discord_game_sdk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = discord_game_sdk.dylib; path = GameSDK/lib/x86_64/discord_game_sdk.dylib; sourceTree = "<group>"; };
+		4276FA75279DE36900875C33 /* Testing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Testing-Bridging-Header.h"; sourceTree = "<group>"; };
+		4276FA7C279DFD5200875C33 /* NSString+CString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CString.h"; sourceTree = "<group>"; };
+		4276FA7D279DFD5200875C33 /* NSString+CString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CString.m"; sourceTree = "<group>"; };
+		4276FA7F279E4BBD00875C33 /* DiscordXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscordXPC.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4276FA17279DD2AE00875C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276FA7B279DF07300875C33 /* Dynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4276FA4F279DD5EF00875C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276FA72279DDCB200875C33 /* discord_game_sdk.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4276FA11279DD2AE00875C33 = {
+			isa = PBXGroup;
+			children = (
+				4276FA70279DDCA800875C33 /* GameSDK */,
+				4276FA53279DD5EF00875C33 /* DiscordXPC */,
+				4276FA1C279DD2AE00875C33 /* Testing */,
+				4276FA1B279DD2AE00875C33 /* Products */,
+				4276FA32279DD2C100875C33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4276FA1B279DD2AE00875C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4276FA1A279DD2AE00875C33 /* Testing.app */,
+				4276FA52279DD5EF00875C33 /* DiscordXPC.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4276FA1C279DD2AE00875C33 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				4276FA31279DD2B300875C33 /* Testing.entitlements */,
+				4276FA1D279DD2AE00875C33 /* AppDelegate.swift */,
+				4276FA1F279DD2AE00875C33 /* SceneDelegate.swift */,
+				4276FA21279DD2AE00875C33 /* ViewController.swift */,
+				4276FA23279DD2AE00875C33 /* Main.storyboard */,
+				4276FA26279DD2AF00875C33 /* Assets.xcassets */,
+				4276FA28279DD2AF00875C33 /* LaunchScreen.storyboard */,
+				4276FA2B279DD2AF00875C33 /* Info.plist */,
+				4276FA75279DE36900875C33 /* Testing-Bridging-Header.h */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		4276FA32279DD2C100875C33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4276FA71279DDCB200875C33 /* discord_game_sdk.dylib */,
+				4276FA33279DD2C100875C33 /* discord_game_sdk.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4276FA53279DD5EF00875C33 /* DiscordXPC */ = {
+			isa = PBXGroup;
+			children = (
+				4276FA7F279E4BBD00875C33 /* DiscordXPC.entitlements */,
+				4276FA54279DD5EF00875C33 /* DiscordXPCProtocol.h */,
+				4276FA55279DD5EF00875C33 /* DiscordXPC.h */,
+				4276FA56279DD5EF00875C33 /* DiscordXPC.m */,
+				4276FA58279DD5EF00875C33 /* main.m */,
+				4276FA5A279DD5EF00875C33 /* Info.plist */,
+				4276FA7C279DFD5200875C33 /* NSString+CString.h */,
+				4276FA7D279DFD5200875C33 /* NSString+CString.m */,
+			);
+			path = DiscordXPC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4276FA19279DD2AE00875C33 /* Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4276FA2E279DD2AF00875C33 /* Build configuration list for PBXNativeTarget "Testing" */;
+			buildPhases = (
+				4276FA16279DD2AE00875C33 /* Sources */,
+				4276FA17279DD2AE00875C33 /* Frameworks */,
+				4276FA18279DD2AE00875C33 /* Resources */,
+				4276FA61279DD71D00875C33 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4276FA60279DD71D00875C33 /* PBXTargetDependency */,
+			);
+			name = Testing;
+			packageProductDependencies = (
+				4276FA7A279DF07300875C33 /* Dynamic */,
+			);
+			productName = Testing;
+			productReference = 4276FA1A279DD2AE00875C33 /* Testing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4276FA51279DD5EF00875C33 /* DiscordXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4276FA5B279DD5EF00875C33 /* Build configuration list for PBXNativeTarget "DiscordXPC" */;
+			buildPhases = (
+				4276FA4E279DD5EF00875C33 /* Sources */,
+				4276FA4F279DD5EF00875C33 /* Frameworks */,
+				4276FA74279DDCB200875C33 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscordXPC;
+			productName = DiscordXPC;
+			productReference = 4276FA52279DD5EF00875C33 /* DiscordXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4276FA12279DD2AE00875C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4276FA19279DD2AE00875C33 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					4276FA51279DD5EF00875C33 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4276FA15279DD2AE00875C33 /* Build configuration list for PBXProject "Testing" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4276FA11279DD2AE00875C33;
+			packageReferences = (
+				4276FA79279DF07300875C33 /* XCRemoteSwiftPackageReference "Dynamic" */,
+			);
+			productRefGroup = 4276FA1B279DD2AE00875C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4276FA19279DD2AE00875C33 /* Testing */,
+				4276FA51279DD5EF00875C33 /* DiscordXPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4276FA18279DD2AE00875C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276FA2A279DD2AF00875C33 /* LaunchScreen.storyboard in Resources */,
+				4276FA27279DD2AF00875C33 /* Assets.xcassets in Resources */,
+				4276FA25279DD2AE00875C33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4276FA16279DD2AE00875C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276FA22279DD2AE00875C33 /* ViewController.swift in Sources */,
+				4276FA1E279DD2AE00875C33 /* AppDelegate.swift in Sources */,
+				4276FA20279DD2AE00875C33 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4276FA4E279DD5EF00875C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4276FA7E279DFD5200875C33 /* NSString+CString.m in Sources */,
+				4276FA59279DD5EF00875C33 /* main.m in Sources */,
+				4276FA57279DD5EF00875C33 /* DiscordXPC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4276FA60279DD71D00875C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = maccatalyst;
+			target = 4276FA51279DD5EF00875C33 /* DiscordXPC */;
+			targetProxy = 4276FA5F279DD71D00875C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4276FA23279DD2AE00875C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4276FA24279DD2AE00875C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4276FA28279DD2AF00875C33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4276FA29279DD2AF00875C33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4276FA2C279DD2AF00875C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4276FA2D279DD2AF00875C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4276FA2F279DD2AF00875C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Testing/Testing.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Testing/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.Testing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Testing/Testing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2,6";
+			};
+			name = Debug;
+		};
+		4276FA30279DD2AF00875C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Testing/Testing.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Testing/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.Testing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Testing/Testing-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2,6";
+			};
+			name = Release;
+		};
+		4276FA5C279DD5EF00875C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DiscordXPC/DiscordXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GameSDK/c\"";
+				INFOPLIST_FILE = DiscordXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DiscordXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)_$(_BOOL_$(SKIP_INSTALL)))",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameSDK/lib/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.Testing.DiscordXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		4276FA5D279DD5EF00875C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DiscordXPC/DiscordXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP873NYDVX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GameSDK/c\"";
+				INFOPLIST_FILE = DiscordXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DiscordXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)_$(_BOOL_$(SKIP_INSTALL)))",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameSDK/lib/x86_64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = space.joscomputing.Testing.DiscordXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4276FA15279DD2AE00875C33 /* Build configuration list for PBXProject "Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4276FA2C279DD2AF00875C33 /* Debug */,
+				4276FA2D279DD2AF00875C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4276FA2E279DD2AF00875C33 /* Build configuration list for PBXNativeTarget "Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4276FA2F279DD2AF00875C33 /* Debug */,
+				4276FA30279DD2AF00875C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4276FA5B279DD5EF00875C33 /* Build configuration list for PBXNativeTarget "DiscordXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4276FA5C279DD5EF00875C33 /* Debug */,
+				4276FA5D279DD5EF00875C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4276FA79279DF07300875C33 /* XCRemoteSwiftPackageReference "Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mhdhejazi/Dynamic";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4276FA7A279DF07300875C33 /* Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4276FA79279DF07300875C33 /* XCRemoteSwiftPackageReference "Dynamic" */;
+			productName = Dynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4276FA12279DD2AE00875C33 /* Project object */;
+}
